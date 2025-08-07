@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  webapp:
+    build: .
+    image: badsfarmil/latihan-docker:v2 # Kita beri versi baru
+    ports:
+      - "8000:5000"
+    volumes:
+      - ./data:/app/data
